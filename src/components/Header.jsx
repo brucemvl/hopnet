@@ -4,7 +4,7 @@ import "../styles/Header.scss"
 function Header(){
 
 return <header>
-    <img src={logo} />
+    <img src={logo} alt="logo hopnet"/>
 </header>
 }
 
