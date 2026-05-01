@@ -79,32 +79,32 @@ Un nettoyage maîtrisé permet de maintenir des espaces propres, soignés et agr
 
 <ul>
 <li className="fade-item">
-    <img src={prestations1} alt="image hall"/>
+    <img src={prestations1} alt="hall"/>
     <h4>Entretien des halls et espaces d’accueil</h4>
     </li>
 
 <li className="fade-item">
-        <img src={prestations2} alt="image nettoyage escaliers et paliers"/>
+        <img src={prestations2} alt="nettoyage escaliers et paliers"/>
 <h4>Nettoyage des escaliers, paliers et circulations</h4>
 </li>
 
 <li className="fade-item">
-            <img src={prestations3} alt="image entretien ascenceur"/>
+            <img src={prestations3} alt="entretien ascenceur"/>
 <h4>Entretien des ascenseurs</h4>
 </li>
 
 <li className="fade-item">
-                <img src={prestations4} alt="image nettoyage parking"/>
+                <img src={prestations4} alt="nettoyage parking"/>
 <h4>Nettoyage des parkings</h4>
 </li>
 
 <li className="fade-item">
-                <img src={prestations5} alt="image entretien local poubelles"/>
+                <img src={prestations5} alt="entretien local poubelles"/>
 <h4>Gestion et entretien des espaces déchets</h4>
 </li>
 
 <li className="fade-item">
-                    <img src={prestations6} alt="image nettoyage vitre"/>
+                    <img src={prestations6} alt="nettoyage vitre"/>
     <h4>Nettoyage de la vitrerie</h4>
     </li>
 </ul>
