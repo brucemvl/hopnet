@@ -117,7 +117,6 @@ Un nettoyage maîtrisé permet de maintenir des espaces propres, soignés et agr
 
 
 <article>
-
 <ul>
 <li>Interventions régulières et maîtrisées</li>
 <li>Équipes formées, discrètes et professionnelles</li>
@@ -126,6 +125,45 @@ Un nettoyage maîtrisé permet de maintenir des espaces propres, soignés et agr
 </ul>
 <p>
 Chaque détail compte. C’est cette exigence qui fait la différence au quotidien</p>
+
+</article>
+
+
+</section>
+
+<section className="engagement">
+
+<h2>Notre engagement</h2>
+
+
+<article>
+<h4>Offrir bien plus qu’un service d’entretien</h4>
+
+<ul>
+<li>Des espaces toujours impeccables</li>
+<li>Une image valorisée</li>
+<li>Une gestion fluide et sereine</li>
+</ul>
+
+</article>
+
+
+</section>
+
+<section className="difference">
+
+<h2>Ce qui nous differencie</h2>
+
+
+<article>
+
+<ul>
+<li>Une vraie logique de partenariat avec les syndics et gestionnaires</li>
+<li>Une approche proactive (on anticipe les problèmes au lieu de les subir)</li>
+<li>Une communication fluide et transparente</li>
+<li>Un objectif clair : zéro stress pour le client</li>
+</ul>
+
 </article>
 
 
