@@ -1,16 +1,24 @@
 .blocpage {
-padding-inline: 1em;
     display: flex;
     flex-direction: column;
     gap: 1em;
+
+    .banner  {
+        border-radius: 20px;
+        margin-inline: 0.5em;
+    }
+
+    .ecolo  {
+        border-radius: 20px;
+        margin-inline: 0.5em;
+    }
 
 section {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 1em;
-    width: 100%;
-
+padding-inline: 1em;
     p {
         text-align: center;
             font-family: Montserrat;

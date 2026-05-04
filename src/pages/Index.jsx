@@ -34,7 +34,7 @@ function Index(){
 
 return (
 <div className="blocpage">
-  <img src={banner} alt="banniere equipe hopnet" />
+  <img src={banner} alt="banniere equipe hopnet" className="banner" />
     <section>
    <h2>Qui sommes nous?</h2>
 
@@ -172,7 +172,7 @@ Chaque détail compte. C’est cette exigence qui fait la différence au quotidi
 
 </section>
 
-<img src={ecolo} alt="ecologie" />
+<img src={ecolo} alt="ecologie" className="ecolo" />
 
 </div>
 )
