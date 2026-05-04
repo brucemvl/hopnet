@@ -5,6 +5,8 @@ import prestations3 from "../assets/prestations3.png"
 import prestations4 from "../assets/prestations4.png"
 import prestations5 from "../assets/prestations5.png"
 import prestations6 from "../assets/prestations6.png"
+import banner from "../assets/banner.png"
+import ecolo from "../assets/ecolo.jpg"
 import { useEffect } from "react";
 
 function Index(){
@@ -32,6 +34,7 @@ function Index(){
 
 return (
 <div className="blocpage">
+  <img src={banner} />
     <section>
    <h2>Qui sommes nous?</h2>
 
@@ -85,7 +88,7 @@ Un nettoyage maîtrisé permet de maintenir des espaces propres, soignés et agr
 
 <li className="fade-item">
         <img src={prestations2} alt="nettoyage escaliers et paliers"/>
-<h4>Nettoyage des escaliers, paliers et circulations</h4>
+<h4>Nettoyage des escaliers, paliers et zones de circulation</h4>
 </li>
 
 <li className="fade-item">
@@ -168,6 +171,8 @@ Chaque détail compte. C’est cette exigence qui fait la différence au quotidi
 
 
 </section>
+
+<img src={ecolo} />
 
 </div>
 )
