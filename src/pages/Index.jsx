@@ -6,10 +6,17 @@ import prestations4 from "../assets/prestations4.png"
 import prestations5 from "../assets/prestations5.png"
 import prestations6 from "../assets/prestations6.png"
 import banner from "../assets/banner.png"
+import vector from "../assets/chevron-up.png"
 import ecolo from "../assets/ecolo.jpg"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Index(){
+
+   const [openSection, setOpenSection] = useState(null);
+
+  const toggleSection = (section) => {
+    setOpenSection(prev => (prev === section ? null : section));
+  };
 
   useEffect(() => {
     const items = document.querySelectorAll(".fade-item");
@@ -36,19 +43,36 @@ return (
 <div className="blocpage">
   <img src={banner} alt="banniere equipe hopnet" className="banner" />
     <section>
-   <h2>Qui sommes nous?</h2>
+<div className="title" onClick={() => toggleSection("who")}>
+ <h2>Qui sommes nous</h2>
+<img 
+    src={vector} 
+    className={`chevron ${openSection === "who" ? "rotate" : ""}`} 
+    alt="ouvrir section"
+  />
+  </div>
 
-<p>
+<div className={`accordion-content ${openSection === "who" ? "open" : ""}`}>
+  <p>
     Spécialisée dans l’entretien d’immeubles, résidences et copropriétés, nous proposons un service de nettoyage exigeant, pensé pour valoriser durablement vos espaces.
 
 Nous accompagnons propriétaires, gestionnaires et syndics avec une approche simple : offrir un cadre propre, soigné et agréable à vivre, sans compromis sur la qualité
 </p>
+</div>
 </section>
 
 <section className="contexte">
 
-<h2>Contexte & enjeux</h2>
-
+<div className="title" onClick={() => toggleSection("contexte")}>
+ <h2>Contexte & enjeux</h2>
+<img 
+    src={vector} 
+    className={`chevron ${openSection === "contexte" ? "rotate" : ""}`} 
+    alt="ouvrir section"
+  />
+  </div>
+  
+<div className={`accordion-content ${openSection === "contexte" ? "open" : ""}`}>
 <h3>Les parties communes sont le reflet immédiat d’une résidence</h3>
 
 <article>
@@ -74,10 +98,19 @@ Un nettoyage maîtrisé permet de maintenir des espaces propres, soignés et agr
 </ul>
 <p>C’est cette exigence que nous intégrons dans chacune de nos interventions</p>
 </article>
+</div>
 </section>
 
 <section className="prestations">
-<h2>Nos prestations</h2>
+<div className="title" onClick={() => toggleSection("prestations")}>
+ <h2>Nos prestations</h2>
+<img 
+    src={vector} 
+    className={`chevron ${openSection === "prestations" ? "rotate" : ""}`} 
+    alt="ouvrir section"
+  />
+  </div>
+<div className={`accordion-content ${openSection === "prestations" ? "open" : ""}`}>
 <h3>Des interventions sur mesure, adaptées à chaque résidence</h3>
 
 <ul>
@@ -111,13 +144,21 @@ Un nettoyage maîtrisé permet de maintenir des espaces propres, soignés et agr
     <h4>Nettoyage de la vitrerie</h4>
     </li>
 </ul>
-
+</div>
 </section>
 
 <section className="exigence">
 
-<h2>Notre exigence</h2>
+<div className="title" onClick={() => toggleSection("exigences")}>
+ <h2>Notre exigence</h2>
+<img 
+    src={vector} 
+    className={`chevron ${openSection === "exigences" ? "rotate" : ""}`} 
+    alt="ouvrir section"
+  />
+  </div>
 
+<div className={`accordion-content ${openSection === "exigences" ? "open" : ""}`}>
 
 <article>
 <ul>
@@ -131,13 +172,21 @@ Chaque détail compte. C’est cette exigence qui fait la différence au quotidi
 
 </article>
 
-
+</div>
 </section>
 
 <section className="engagement">
 
-<h2>Notre engagement</h2>
+<div className="title" onClick={() => toggleSection("engagement")}>
+ <h2>Notre engagement</h2>
+<img 
+    src={vector} 
+    className={`chevron ${openSection === "engagement" ? "rotate" : ""}`} 
+    alt="ouvrir section"
+  />
+  </div>
 
+<div className={`accordion-content ${openSection === "engagement" ? "open" : ""}`}>
 
 <article>
 <h4>Offrir bien plus qu’un service d’entretien</h4>
@@ -150,12 +199,20 @@ Chaque détail compte. C’est cette exigence qui fait la différence au quotidi
 
 </article>
 
-
+</div>
 </section>
 
 <section className="difference">
 
-<h2>Ce qui nous differencie</h2>
+<div className="title" onClick={() => toggleSection("difference")}>
+ <h2>Ce qui nous differencie</h2>
+<img 
+    src={vector} 
+    className={`chevron ${openSection === "difference" ? "rotate" : ""}`} 
+    alt="ouvrir section"
+  />
+  </div>
+<div className={`accordion-content ${openSection === "difference" ? "open" : ""}`}>
 
 
 <article>
@@ -168,7 +225,7 @@ Chaque détail compte. C’est cette exigence qui fait la différence au quotidi
 </ul>
 
 </article>
-
+</div>
 
 </section>
 
