@@ -188,13 +188,24 @@ Chaque détail compte. C’est cette exigence qui fait la différence au quotidi
 
 <div className={`accordion-content ${openSection === "engagement" ? "open" : ""}`}>
 
+<h3>Offrir bien plus qu’un simple service d’entretien.<br></br>
+
+Nous nous engageons à garantir, dans la durée, un niveau de qualité constant et irréprochable.</h3>
 <article>
-<h4>Offrir bien plus qu’un service d’entretien</h4>
 
 <ul>
-<li>Des espaces toujours impeccables</li>
-<li>Une image valorisée</li>
-<li>Une gestion fluide et sereine</li>
+<li>
+  <h4>Des espaces toujours impeccables</h4>
+<p>Chaque intervention est réalisée avec rigueur et exigence, pour assurer des parties communes propres, soignées et agréables au quotidien.</p>
+</li>
+<li>
+  <h4>Une image valorisée</h4>
+<p>Un entretien maîtrisé contribue directement à l’attractivité et à la tenue de la résidence. Nous participons activement à préserver et valoriser votre patrimoine</p>
+</li>
+<li>
+  <h4>Une gestion fluide et sereine</h4>
+<p>Notre organisation est pensée pour vous simplifier la vie : prestations régulières, suivi précis et réactivité en cas de besoin. Vous avez l’assurance que tout est pris en charge, sans relance ni contrainte</p>
+</li>
 </ul>
 
 </article>
@@ -213,15 +224,27 @@ Chaque détail compte. C’est cette exigence qui fait la différence au quotidi
   />
   </div>
 <div className={`accordion-content ${openSection === "difference" ? "open" : ""}`}>
+<h3>Au-delà de la prestation, nous apportons une véritable qualité de service.</h3>
 
 
 <article>
-
 <ul>
-<li>Une vraie logique de partenariat avec les syndics et gestionnaires</li>
-<li>Une approche proactive (on anticipe les problèmes au lieu de les subir)</li>
-<li>Une communication fluide et transparente</li>
-<li>Un objectif clair : zéro stress pour le client</li>
+<li>
+  <h4>Une logique de partenariat</h4>
+  <p>Nous travaillons en étroite collaboration avec l’ensemble des interlocuteurs (gestionnaires, propriétaires, résidents) pour assurer un service aligné avec les attentes de chaque site</p>
+  </li>
+<li>
+  <h4>Une approche proactive</h4>
+  <p>Nous anticipons les besoins et identifions les points d’attention avant qu’ils ne deviennent des problématiques. Cette vigilance permet de maintenir un niveau de qualité constant</p>
+  </li>
+<li>
+  <h4>Une communication claire et réactive</h4>
+  <p>Un interlocuteur disponible, des échanges simples et une transparence totale sur les interventions. Vous êtes informé, sans avoir à courir après l’information</p>
+  </li>
+<li>
+  <h4>Un objectif simple : votre tranquillité</h4>
+  <p>Nous prenons en charge l’entretien dans sa globalité, avec sérieux et constance, pour vous libérer de toute contrainte liée à la gestion quotidienne</p>
+  </li>
 </ul>
 
 </article>

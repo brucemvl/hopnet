@@ -47,11 +47,12 @@ color: #fff;
   transition: transform 0.3s ease-in-out;
   position: absolute;
   right: 30px;
+  transform: rotate(-180deg);
 }
 
 /* 🔥 rotation */
 .chevron.rotate {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
     }
 
@@ -91,9 +92,9 @@ color: #fff;
       align-items: center;
       background-color: rgb(10, 175, 10);
       border-radius: 20px;
-      padding-block: 1em;
+      padding: 1em;
       gap: 1em;
-      width: 96%;
+      
 
       h4 {
         color: white;
@@ -113,6 +114,7 @@ color: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 0.5em;
 
         li {
           color: white;
