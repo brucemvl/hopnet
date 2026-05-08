@@ -9,6 +9,7 @@ import banner from "../assets/banner.png"
 import vector from "../assets/chevron-up.png"
 import ecolo from "../assets/ecolo.jpg"
 import { useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 function Index(){
 
@@ -38,6 +39,25 @@ function Index(){
 
     return () => observer.disconnect();
   }, []);
+
+  const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "hopnet123",
+      "template_hls3bbo",
+      e.target,
+      "5a9QlNXeINK_p0GwQ"
+    )
+    .then(() => {
+      alert("Message envoyé !");
+      e.target.reset();
+    })
+    .catch(() => {
+      alert("Erreur lors de l'envoi");
+    });
+};
 
 return (
 <div className="blocpage">
@@ -253,6 +273,50 @@ Nous nous engageons à garantir, dans la durée, un niveau de qualité constant 
 </section>
 
 <img src={ecolo} alt="ecologie" className="ecolo" />
+
+<section className="contact">
+
+  <h2>Contact</h2>
+
+  
+
+
+  <h3>
+    Une question ou un besoin ?
+    <br />
+    Contactez-nous directement.
+  </h3>
+
+  <form className="contact-form" onSubmit={sendEmail}>
+
+    <input
+    type="text"
+    name="name"
+    placeholder="Votre nom"
+    required
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Votre adresse mail"
+    required
+  />
+
+  <textarea
+    name="message"
+    placeholder="Votre message"
+    rows="6"
+    required
+  />
+
+    <button type="submit">
+      Envoyer
+    </button>
+
+  </form>
+
+</section>
 
 </div>
 )
