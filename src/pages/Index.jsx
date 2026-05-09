@@ -289,12 +289,7 @@ Nous nous engageons à garantir, dans la durée, un niveau de qualité constant 
 
   <form className="contact-form" onSubmit={sendEmail}>
 
-    <input
-    type="text"
-    name="name"
-    placeholder="Votre nom"
-    required
-  />
+    
 
   <input
     type="email"
@@ -302,6 +297,27 @@ Nous nous engageons à garantir, dans la durée, un niveau de qualité constant 
     placeholder="Votre adresse mail"
     required
   />
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Société"
+  />
+
+  <select name="prestation" required>
+  <option value="">Type d'intervention</option>
+  <option value="Nettoayge appartement">Nettoyage appartement</option>
+  <option value="Nettoayge residence">Nettoyage residence</option>
+  <option value="Nettoayge parties communes">Nettoyage parties communes</option>
+  <option value="Air bnb">Air bnb</option>
+  <option value="Conciergerie">Conciergerie</option>
+  <option value="Nettoyage parking">Nettoyage parking</option>
+  <option value="Entree/Sortie de poubelles">Entree/Sortie de poubelles</option>
+  <option value="Desinfection local poubelle">Desinfection local poubelle</option>
+  <option value="Autre">Autre</option>
+</select>
+
+  
 
   <textarea
     name="message"
