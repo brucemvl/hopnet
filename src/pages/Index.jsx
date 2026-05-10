@@ -5,7 +5,7 @@ import prestations3 from "../assets/prestations3.png"
 import prestations4 from "../assets/prestations4.png"
 import prestations5 from "../assets/prestations5.png"
 import prestations6 from "../assets/prestations6.png"
-import banner from "../assets/banner.png"
+import banner from "../assets/banner2.jpg"
 import vector from "../assets/chevron-up.png"
 import ecolo from "../assets/ecolo.jpg"
 import { useEffect, useState } from "react";
@@ -72,12 +72,14 @@ return (
   />
   </div>
 
-<div className={`accordion-content ${openSection === "who" ? "open" : ""}`}>
-  <p>
+<div className={`accordion-content ${openSection === "who" ? "open" : ""}`} id="who">
+  <article>
+  <p className="who">
     Spécialisée dans l’entretien d’immeubles, résidences et copropriétés, nous proposons un service de nettoyage exigeant, pensé pour valoriser durablement vos espaces.
 
 Nous accompagnons propriétaires, gestionnaires et syndics avec une approche simple : offrir un cadre propre, soigné et agréable à vivre, sans compromis sur la qualité
 </p>
+</article>
 </div>
 </section>
 
