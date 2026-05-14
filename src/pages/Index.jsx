@@ -1,15 +1,15 @@
-import "../styles/Index.scss"
-import prestations1 from "../assets/prestations1.png"
-import prestations2 from "../assets/prestations222.png"
-import prestations3 from "../assets/prestations3.png"
-import prestations4 from "../assets/prestations4.png"
-import prestations5 from "../assets/prestations5.png"
-import prestations6 from "../assets/prestations6.png"
+import emailjs from "@emailjs/browser"
+import { useEffect, useState } from "react"
 import banner from "../assets/banner2.jpg"
 import vector from "../assets/chevron-up.png"
 import ecolo from "../assets/ecolo.jpg"
-import { useEffect, useState } from "react";
-import emailjs from "@emailjs/browser";
+import prestations1 from "../assets/prestations1.webp"
+import prestations2 from "../assets/prestations222.webp"
+import prestations3 from "../assets/prestations3.webp"
+import prestations4 from "../assets/prestations4.webp"
+import prestations5 from "../assets/prestations5.webp"
+import prestations6 from "../assets/prestations6.webp"
+import "../styles/Index.scss"
 
 function Index(){
 
@@ -157,7 +157,7 @@ Un nettoyage maîtrisé permet de maintenir des espaces propres, soignés et agr
 </li>
 
 <li className="fade-item">
-                <img src={prestations5} alt="entretien local poubelles"/>
+                <img src={prestations5} alt="entretien local poubelles" loading="lazy"/>
 <h4>Gestion et entretien des espaces déchets</h4>
 </li>
 
