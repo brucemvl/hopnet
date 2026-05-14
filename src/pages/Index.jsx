@@ -1,8 +1,8 @@
 import emailjs from "@emailjs/browser"
 import { useEffect, useState } from "react"
-import banner from "../assets/banner2.jpg"
+import banner from "../assets/banner2.webp"
 import vector from "../assets/chevron-up.png"
-import ecolo from "../assets/ecolo.jpg"
+import ecolo from "../assets/ecolo.webp"
 import prestations1 from "../assets/prestations1.webp"
 import prestations2 from "../assets/prestations222.webp"
 import prestations3 from "../assets/prestations3.webp"
@@ -137,22 +137,22 @@ Un nettoyage maîtrisé permet de maintenir des espaces propres, soignés et agr
 
 <ul>
 <li className="fade-item">
-    <img src={prestations1} alt="hall"/>
+    <img src={prestations1} alt="hall" loading="lazy"/>
     <h4>Entretien des halls et espaces d’accueil</h4>
     </li>
 
 <li className="fade-item">
-        <img src={prestations2} alt="nettoyage escaliers et paliers"/>
+        <img src={prestations2} alt="nettoyage escaliers et paliers" loading="lazy"/>
 <h4>Nettoyage des escaliers, paliers et zones de circulation</h4>
 </li>
 
 <li className="fade-item">
-            <img src={prestations3} alt="entretien ascenceur"/>
+            <img src={prestations3} alt="entretien ascenceur" loading="lazy"/>
 <h4>Entretien des ascenseurs</h4>
 </li>
 
 <li className="fade-item">
-                <img src={prestations4} alt="nettoyage parking"/>
+                <img src={prestations4} alt="nettoyage parking" loading="lazy"/>
 <h4>Nettoyage des parkings</h4>
 </li>
 
