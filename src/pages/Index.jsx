@@ -75,7 +75,7 @@ return (
 <div className={`accordion-content ${openSection === "who" ? "open" : ""}`} id="who">
   <article>
   <p className="who">
-    Spécialisée dans l’entretien d’immeubles, résidences et copropriétés, nous proposons un service de nettoyage exigeant, pensé pour valoriser durablement vos espaces.
+    Spécialisés dans l’entretien d’immeubles, résidences et copropriétés, nous proposons un service de nettoyage exigeant, pensé pour valoriser durablement vos espaces.
 
 Nous accompagnons propriétaires, gestionnaires et syndics avec une approche simple : offrir un cadre propre, soigné et agréable à vivre, sans compromis sur la qualité
 </p>
